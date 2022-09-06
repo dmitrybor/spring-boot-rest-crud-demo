@@ -1,4 +1,4 @@
-package com.pydog.hdemo;
+package com.pydog.crud;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
