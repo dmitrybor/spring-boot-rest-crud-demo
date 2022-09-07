@@ -3,7 +3,6 @@ package com.pydog.crud.service;
 import com.pydog.crud.dao.EmployeeDao;
 import com.pydog.crud.entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -15,7 +14,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     private final EmployeeDao employeeDao;
 
     @Autowired
-    public EmployeeServiceImpl(@Qualifier("employeeDaoHibernateImpl") EmployeeDao employeeDao) {
+    public EmployeeServiceImpl(EmployeeDao employeeDao) {
         this.employeeDao = employeeDao;
     }
 

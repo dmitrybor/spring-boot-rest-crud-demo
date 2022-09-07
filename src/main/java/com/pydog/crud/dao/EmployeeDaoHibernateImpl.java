@@ -4,6 +4,7 @@ import com.pydog.crud.entity.Employee;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -11,6 +12,7 @@ import javax.persistence.EntityManager;
 import java.util.List;
 
 @Repository
+@Profile("hibernate")
 public class EmployeeDaoHibernateImpl implements EmployeeDao {
 
     private final EntityManager entityManager;
