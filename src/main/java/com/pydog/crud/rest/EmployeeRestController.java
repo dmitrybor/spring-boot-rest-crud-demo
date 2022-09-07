@@ -16,7 +16,7 @@ public class EmployeeRestController {
     private final EmployeeService employeeService;
 
     @Autowired
-    public EmployeeRestController(@Qualifier("employeeServiceImpl") EmployeeService employeeService) {
+    public EmployeeRestController(EmployeeService employeeService) {
         this.employeeService = employeeService;
     }
 
